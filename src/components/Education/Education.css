@@ -1,4 +1,4 @@
-.timeline {
+.timeline .container {
   display: flex;
 }
 
@@ -45,6 +45,10 @@
   margin: 0 1.618em;
   top: 30%;
   opacity: 0;
+  background-color: rgba(42, 41, 41, 0.7);
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
 .tl-content h1 {
@@ -58,7 +62,7 @@
 }
 
 .tl-content .logos img {
-  filter: grayscale(1);
+  filter: grayscale(0.5);
   opacity: 0.5;
   height: 80px;
   width: auto;
@@ -137,7 +141,7 @@
 }
 
 @media screen and (max-width:768px) {
-  .timeline {
+  .timeline .container {
     flex-direction: column;
   }
 

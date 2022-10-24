@@ -13,7 +13,8 @@
   --text-color: #9081ac;
   --body-color: #201f1f;
   --transparent-body-color: #201f1fe8; 
-  --container-color: #333333;
+  --container-color: #252525ef;
+  --light-container-color: #44434680;
 
   
   /* Fonts & Tipography */
@@ -157,30 +158,6 @@ img {
   display: grid;
   gap: 1.5rem;
 }
-
-/* Buttons */
-.button {
-  /* display: inline-block;
-  background-color: var(--title-color);
-  color: var(--container-color);
-  padding: 1.25rem 2rem;
-  border-radius: 1rem;
-  font-weight: var(--font-medium); */
-  margin-top: 2rem;
-}
-
-/* .button:hover {
-  background-color: var(--title-color-dark);
-}
-
-.button__icon {
-  margin-left: var(--mb-0-5);
-}
-
-.button__flex {
-  display: inline-flex;
-  align-items: center;
-} */
 
 .custom-shape-divider-top {
   position: relative;
