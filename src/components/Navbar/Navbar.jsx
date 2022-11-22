@@ -10,52 +10,62 @@ import { FaTimes } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import logo from './../../assets/logo.svg';
 import { useState } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -100;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+  }
+
+
   return (
     <header className='header'>
       <nav className='nav container'>
-        <a href="index.html" className="nav__logo">
+        <Link smooth to='/#home' className="nav__logo" scroll={scrollWithOffset}>
           <img src={logo} className='logo' alt="Logo"></img>
-        </a>
+        </Link>
         <div className={showMenu ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">
-              <a href="#hero" className="nav__link active-link">
+
+              <Link smooth to='/#home' className="nav__link active-link" scroll={scrollWithOffset}>
                 <i className='nav__icon'><AiFillHome size={20} color='white' /></i><span>Home</span>
-              </a>
+              </Link>
+
             </li>
 
             <li className="nav__item">
-              <a href="#about" className="nav__link">
+              <Link smooth to='/#about' className="nav__link" scroll={scrollWithOffset}>
                 <i className='nav__icon'><BsFileEarmarkPersonFill size={20} color='white' /></i><span>About</span>
-              </a>
+              </Link>
             </li>
 
             <li className="nav__item">
-              <a href="#education" className="nav__link">
+              <Link smooth to='/#education' className="nav__link" scroll={scrollWithOffset}>
                 <i className='nav__icon'><HiAcademicCap size={20} color='white' /></i><span>Education</span>
-              </a>
+              </Link>
             </li>
 
             <li className="nav__item">
-              <a href="#skills" className="nav__link">
+              <Link smooth to='/#skills' className="nav__link" scroll={scrollWithOffset}>
                 <i className='nav__icon'><TbPuzzle2 size={20} color='white' /></i><span>Tech skills</span>
-              </a>
+              </Link>
             </li>
 
             <li className="nav__item">
-              <a href="#projects" className="nav__link">
+              <Link smooth to='/#projects' className="nav__link" scroll={scrollWithOffset}>
                 <i className='nav__icon'><IoCodeSlashSharp size={20} color='white' /></i><span>Projects</span>
-              </a>
+              </Link>
             </li>
 
             <li className="nav__item">
-              <a href="#footer" className="nav__link">
-                <i className='nav__icon'><RiContactsLine size={20} color='white' /></i><span>Contact</span>
-              </a>
+              <Link smooth to='/#footer' className="nav__link" scroll={scrollWithOffset}>
+                <i className='nav__icon'><RiContactsLine size={20} color='white' /></i><span>Contacts</span>
+              </Link>
             </li>
           </ul>
           <i className='nav__close' onClick={() => setShowMenu(!showMenu)}><FaTimes size={20} color='white' /></i>

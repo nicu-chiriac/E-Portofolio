@@ -1,21 +1,25 @@
 .about picture img {
   mix-blend-mode:lighten;
   min-width: 20rem;
-  transform: rotate(4deg);
   border-radius: 25px;
   box-shadow: 0 5px 5px 0 rgba(45, 20, 70, 0.2), 0 2px 5px 0 rgba(143, 103, 189, 0.491);
   margin-top: 3rem;
   transition: all .2s ease-in-out;
 }
 
-.about picture img:hover {
-  transform: none;
+.about .column {
+  max-width: 50%;
 }
 
 .about .row {
   display: flex;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 2rem;
+}
+
+.about .row p {
+  line-height: 1.5rem;
+  text-indent: 2rem;
 }
 
 .about .button {
@@ -36,6 +40,10 @@
 
   .about .column {
     text-align: center;
-    align-items: center;
+    max-width: 100%;
+  }
+
+  .about .column p {
+    text-align: justify;
   }
 }

@@ -1,11 +1,10 @@
-.item__containers {
+.skills .item__containers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  /* justify-content: center; */
 }
 
-.item__containers .item__container {
+.skills .item__containers .item__container {
 	position: relative;
 	width: auto;
 	height: 20rem;
@@ -14,7 +13,7 @@
   box-shadow: 4px 4px 5px 0px rgba(26, 26, 26, 0.5);
 }
 
-.item__container h2 {
+.skills .item__container h2 {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
@@ -48,13 +47,13 @@
 
 
 @media screen and (max-width:992px) {
-  .item__containers {
+  .skills .item__containers {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width:768px) {
-  .item__containers {
+  .skills .item__containers {
     grid-template-columns: repeat(1, 1fr);
   }
 }

@@ -1,0 +1,139 @@
+.project .item__containers {
+  display: grid;
+  grid-auto-columns: auto auto;
+  grid-template-areas:
+  "first first" 
+  "second third"
+  "fourth fourth"
+  "fifth sixth"
+  "seventh seventh"
+  "eight eight";
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.first {
+  grid-area: first;
+}
+
+.second {
+  grid-area: second;
+}
+
+.third {
+  grid-area: third;
+}
+
+.fourth {
+  grid-area: fourth;
+}
+
+.fifth {
+  grid-area: fifth;
+}
+
+.sixth {
+  grid-area: sixth;
+}
+
+.seventh {
+  grid-area: seventh ;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+
+.project .item__containers .item__container {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: var(--container-color);
+	border-radius: 10px;
+  box-shadow: 4px 4px 5px 0px rgba(26, 26, 26, 0.5);
+}
+
+.project .item__container h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.project__subtitle:not(:first-of-type) {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project__subtitle {
+  color: var(--subtitle-color)
+}
+
+.project__image {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.project__images__grid {
+  display: flex;
+}
+
+.project ul li {
+  font-size: var(--h3-font-size);
+  padding: 5px;
+}
+
+.project ul {
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+.project ul li::marker {
+  content: '✔';
+  color: var(--subtitle-color);
+}
+
+.project picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project picture img:nth-child(2) {
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+.project .item__container h3 {
+  text-align: center;
+}
+
+@media screen and (max-width:576px) {
+  .project .item__containers {
+    grid-template-areas:
+    "first first" 
+    "second second"
+    "third third"
+    "fourth fourth"
+    "fifth fifth"
+    "sixth sixth"
+    "seventh seventh"
+    "eight eight";
+  }
+
+  .project__images__grid {
+    flex-direction: column;
+  }
+
+  .project__images__grid .project__image {
+    height:10rem;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+

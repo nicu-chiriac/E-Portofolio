@@ -146,6 +146,12 @@ img {
   margin-bottom: 1rem;
 }
 
+.project__description {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-weight: var(--font-bold);
+}
 
 /* Layout */
 .container {
@@ -213,6 +219,10 @@ img {
 @media screen and (max-width:768px) {
   .section h1, .section h2{
     text-align: center;
+  }
+
+  .section {
+    margin-top: var(--mb-2);
   }
   
 }

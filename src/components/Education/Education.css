@@ -106,12 +106,6 @@
 }
 
 @media (hover: hover) {
-  .timeline:hover .tl-item {
-    width: 33.33333%;
-  }
-  .tl-item:hover {
-    width: 40% !important;
-  }
   .tl-item:hover:after {
     opacity: 0;
   }
