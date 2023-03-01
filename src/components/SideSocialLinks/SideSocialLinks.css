@@ -46,7 +46,6 @@
   }
   .sticky-left {
     display: flex;
-
   }
 
   .sticky-left-container p{
@@ -54,6 +53,6 @@
   }
 
   .sticky-left li:hover {
-    pointer-events: none;
+    margin-right:0;
   }
 }

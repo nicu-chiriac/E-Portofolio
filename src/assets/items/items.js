@@ -7,11 +7,13 @@ import item6 from './bootstrap.png';
 import item7 from './nodejs.png';
 import item8 from './express.png';
 import item9 from './postgresql.png';
-import item10 from './figma.png';
-import item11 from './adobexd.png';
-import item12 from './postman.png';
-import item13 from './office.png';
-import item14 from './giticon.png';
+import item10 from './python.png';
+import item11 from './flask.png';
+import item12 from './figma.png';
+import item13 from './adobexd.png';
+import item14 from './postman.png';
+import item15 from './office.png';
+import item16 from './giticon.png';
 
 
 const items = [
@@ -78,26 +80,24 @@ const items = [
     category: 'backend',
   },
 
-  
   {
     id: '10',
-    name : "Figma",
+    name : "Python",
     image: item10,
-    category: 'tools',
+    category: 'backend',
   },
 
-  
   {
     id: '11',
-    name : "AdobeXD",
+    name : "Flask",
     image: item11,
-    category: 'tools',
+    category: 'backend',
   },
 
   
   {
     id: '12',
-    name : "Postman",
+    name : "Figma",
     image: item12,
     category: 'tools',
   },
@@ -105,7 +105,7 @@ const items = [
   
   {
     id: '13',
-    name : "Office",
+    name : "AdobeXD",
     image: item13,
     category: 'tools',
   },
@@ -113,8 +113,24 @@ const items = [
   
   {
     id: '14',
-    name : "Git",
+    name : "Postman",
     image: item14,
+    category: 'tools',
+  },
+
+  
+  {
+    id: '15',
+    name : "Office",
+    image: item15,
+    category: 'tools',
+  },
+
+  
+  {
+    id: '16',
+    name : "Git",
+    image: item16,
     category: 'tools',
   },
 

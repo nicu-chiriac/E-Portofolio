@@ -44,7 +44,6 @@
 .active-link,
 .nav__link:hover {
   color:var(--subtitle-color);
-  /* font-weight: var(--font-bold); */
 }
 
 .logo {
@@ -91,6 +90,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem
+  }
+
+  .active-link {
+    color: var(--title-color);
   }
 
   .nav__icon {

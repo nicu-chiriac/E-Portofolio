@@ -15,8 +15,16 @@ import img5 from '../../../assets/projects/Project1/img5.png';
 import img7 from '../../../assets/projects/Project1/img7.png';
 import project1_gif from '../../../assets/projects/Project1/project1_gif.gif';
 import ModalImage from 'react-modal-image';
+import { MdOutlineArrowBack } from 'react-icons/md';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Project1 = () => {
+
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -100;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+  }
 
   return (
     <div className='project container section' id="project1">
@@ -34,7 +42,7 @@ const Project1 = () => {
           <h2>General features</h2>
           <ul>
             <li>Side navigation bar</li>
-            <li>Modals for adding new data</li>
+            <li>Modals for adding new data (CRUD operations)</li>
             <li>Modals for alerts</li>
           </ul>
           <div className="project__images__grid">
@@ -161,6 +169,11 @@ const Project1 = () => {
             className='project__image'
           />
         </div>
+        <Link smooth to='/#projects' scroll={scrollWithOffset}>
+          <button className='project1__button'>
+            <MdOutlineArrowBack size={30} />
+          </button>
+        </Link>
       </div>
     </div>
   )

@@ -1,6 +1,5 @@
 .hero {
   margin-top: 8rem;
-  margin-left: var(mb);
 }
 
 .hero .row {
@@ -120,6 +119,10 @@
   .hero .column {
     text-align: center;
     align-items: center;
+  }
+
+  .hero {
+    margin-top: 5rem;
   }
 
 }

@@ -6,7 +6,7 @@
 
 .footer .row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
@@ -71,7 +71,7 @@
     box-shadow: none;
   }
 
-  .footer .row .box:nth-child(3) {
+  .footer .row .box:nth-child(2) {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-bottom-right-radius: 20px;

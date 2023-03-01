@@ -113,6 +113,16 @@
   text-align: center;
 }
 
+.project1__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
 @media screen and (max-width:576px) {
   .project .item__containers {
     grid-template-areas:

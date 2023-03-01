@@ -1,7 +1,6 @@
 import React from 'react';
 import './Footer.css';
 import { BsWhatsapp } from 'react-icons/bs';
-import { BsMessenger } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
 
 const Footer = () => {
@@ -16,9 +15,9 @@ const Footer = () => {
             </div>
             <div className="box__row_2">
               <h4>0768 029 807</h4>
-              <a href="#unavailable">
+              <div onClick={() => window.open('mailto:nicu.chiriac99@yahoo.com', '_blank')}>
                 <button>Contact me</button>
-              </a>
+              </div>
             </div>
           </div>
           <div className="box">
@@ -28,21 +27,9 @@ const Footer = () => {
             </div>
             <div className="box__row_2">
               <h4>nicu.chiriac99@yahoo.com</h4>
-              <a href="#unavailable">
+              <div onClick={() => window.open('mailto:nicu.chiriac99@yahoo.com', '_blank')}>
                 <button>Contact me</button>
-              </a>
-            </div>
-          </div>
-          <div className="box">
-            <div className="box__row_1">
-              <BsMessenger className='footer__icon' />
-              <h2>Messenger</h2>
-            </div>
-            <div className="box__row_2">
-              <h4>Chiriac Nicu-Manuel</h4>
-              <a href="#unavailable">
-                <button>Contact me</button>
-              </a>
+              </div>
             </div>
           </div>
         </div>

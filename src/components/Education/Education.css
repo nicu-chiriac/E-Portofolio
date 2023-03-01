@@ -55,16 +55,23 @@
   text-transform: uppercase;
   font-weight: var(--font-bold);
   color: white;
+  font-size: 1.1rem;
+}
+
+.tl-content h2 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  color: var(--subtitle-color)
 }
 
 .tl-content .logos {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .tl-content .logos img {
   filter: grayscale(0.5);
   opacity: 0.5;
-  height: 80px;
+  height: 60px;
   width: auto;
 }
 
