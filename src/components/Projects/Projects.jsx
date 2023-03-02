@@ -3,19 +3,13 @@ import './Projects.css';
 import project1Img from './../../assets/projects/Project1/img1.png';
 import project2Img from './../../assets/projects/Project2/img1.png';
 import project3Img from './../../assets/projects/Project3/img1.png';
-import project4Img from './../../assets/projects/Project4/img1.png';
 import project5Img from './../../assets/projects/Project5/img1.png';
 import { BsGithub } from 'react-icons/bs';
 import items from './../../assets/items/items';
 import { NavLink } from 'react-router-dom';
 
-const Projects = () => {
 
-  const scrollWithOffset = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -100;
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
-  }
+const Projects = () => {
 
   return (
     <section className='projects' id="projects">
@@ -42,7 +36,7 @@ const Projects = () => {
                 status etc. It has different types of permissions for Admin, professors (super-user),
                 students (users).
               </p>
-              <NavLink to='/project1' scrollTo={scrollWithOffset}>
+              <NavLink to='/project1'>
                 <button className='button'>SEE MORE</button>
               </NavLink>
               <div className="links">
@@ -119,9 +113,9 @@ const Projects = () => {
               <h2>RestaurantApp</h2>
               <p> The previous Restaurant Website, but this time with an added Backend using Python's framework - Flask. The website turns into an frontend - backend app. Now the products are automatically added from a database. The app has an Auth system made with JWT (JSON Web Token) with 3 different roles and permissions who can perform CRUD operations on the products. It also has a Swagger documentation available.
               </p>
-              <a href='#unavailable'>
+              <NavLink to='/project5'>
                 <button className='button'>SEE MORE</button>
-              </a>
+              </NavLink>
               <div className="links">
                 <h3>Stack used:</h3>
                 {items.filter((item) =>
@@ -167,43 +161,6 @@ const Projects = () => {
                   item.name === 'CSS3' ||
                   item.name === 'React' ||
                   item.name === 'JavaScript'
-                )
-                  .map((item) => (
-                    <div className="item" key={item.id}>
-                      <img src={item.image} alt={item.name} />
-                    </div>
-                  ))}
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="project__container">
-          <div className="row">
-            <div className="column__1">
-              <picture className='img__container'>
-                <img src={project4Img} alt="Project3 interface screenshot"></img>
-              </picture>
-              <div className="links">
-                <BsGithub className='github__button' size={30} onClick={() => window.open('https://github.com/nicu-chiriac/facerecognitionapp', '_blank')} />Source code
-              </div>
-            </div>
-            <div className="column__2">
-              <h2>Face Recognition App</h2>
-              <p> Frontend - Backend Web App that uses a Clarify API for face detection on an image URL. Project made through the Zero to Hero : Complete Web Developer Udemy Course.
-              </p>
-              <a href='#unavailable'>
-                <button className='button'>SEE MORE</button>
-              </a>
-              <div className="links">
-                <h3>Stack used:</h3>
-                {items.filter((item) =>
-                  item.name === 'HTML5' ||
-                  item.name === 'CSS3' ||
-                  item.name === 'React' ||
-                  item.name === 'JavaScript' ||
-                  item.name === 'NodeJS' ||
-                  item.name === 'Express' ||
-                  item.name === 'PostgreSQL'
                 )
                   .map((item) => (
                     <div className="item" key={item.id}>

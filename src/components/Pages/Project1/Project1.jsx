@@ -17,17 +17,27 @@ import project1_gif from '../../../assets/projects/Project1/project1_gif.gif';
 import ModalImage from 'react-modal-image';
 import { MdOutlineArrowBack } from 'react-icons/md';
 import { HashLink as Link } from 'react-router-hash-link';
+import { useEffect, useRef } from 'react';
 
 const Project1 = () => {
 
   const scrollWithOffset = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
     const yOffset = -100;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
   }
 
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    if (elementRef.current) {
+      elementRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.scrollTo(0, -document.body.scrollHeight);
+    }
+  }, []);
+
   return (
-    <div className='project container section' id="project1">
+    <section className='project container section' id='project1' ref={elementRef}>
       <h1 className='section__title'>Web Application made with PERN Stack</h1>
       <h2 className='project__subtitle'>React Frontend and Express.js REST API Backend</h2>
       <p className='project__description'>The platform is made to help the process of the administration of bachelor’s degree
@@ -175,7 +185,7 @@ const Project1 = () => {
           </button>
         </Link>
       </div>
-    </div>
+    </section>
   )
 }
 

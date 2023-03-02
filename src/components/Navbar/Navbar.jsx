@@ -11,59 +11,99 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import logo from './../../assets/logo.svg';
 import { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
+import { useEffect } from 'react';
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
 
+  const [showMenu, setShowMenu] = useState(false);
   const scrollWithOffset = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
     const yOffset = -100;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
   }
 
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) {
+        setTimeout(() => {
+          scrollWithOffset(el);
+        }, 0);
+      }
+    }
+  }, []);
 
   return (
     <header className='header'>
       <nav className='nav container'>
-        <Link smooth to='/#home' className="nav__logo" scroll={scrollWithOffset}>
+        <Link
+          smooth to='/#home'
+          className="nav__logo"
+          scroll={scrollWithOffset}
+        >
           <img src={logo} className='logo' alt="Logo"></img>
         </Link>
         <div className={showMenu ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">
 
-              <Link smooth to='/#home' className="nav__link active-link" scroll={scrollWithOffset}>
+              <Link
+                smooth to='/#home'
+                className="nav__link active-link"
+                scroll={scrollWithOffset}
+              >
                 <i className='nav__icon'><AiFillHome size={20} color='white' /></i><span>Home</span>
               </Link>
 
             </li>
 
             <li className="nav__item">
-              <Link smooth to='/#about' className="nav__link" scroll={scrollWithOffset}>
+              <Link
+                smooth to='/#about'
+                className="nav__link"
+                scroll={scrollWithOffset}
+              >
                 <i className='nav__icon'><BsFileEarmarkPersonFill size={20} color='white' /></i><span>About</span>
               </Link>
             </li>
 
             <li className="nav__item">
-              <Link smooth to='/#education' className="nav__link" scroll={scrollWithOffset}>
+              <Link
+                smooth to='/#education'
+                className="nav__link"
+                scroll={scrollWithOffset}
+              >
                 <i className='nav__icon'><HiAcademicCap size={20} color='white' /></i><span>Education</span>
               </Link>
             </li>
 
             <li className="nav__item">
-              <Link smooth to='/#skills' className="nav__link" scroll={scrollWithOffset}>
+              <Link
+                smooth to='/#skills'
+                className="nav__link"
+                scroll={scrollWithOffset}
+              >
                 <i className='nav__icon'><TbPuzzle2 size={20} color='white' /></i><span>Tech skills</span>
               </Link>
             </li>
 
             <li className="nav__item">
-              <Link smooth to='/#projects' className="nav__link" scroll={scrollWithOffset}>
+              <Link
+                smooth to='/#projects'
+                className="nav__link"
+                scroll={scrollWithOffset}
+              >
                 <i className='nav__icon'><IoCodeSlashSharp size={20} color='white' /></i><span>Projects</span>
               </Link>
             </li>
 
             <li className="nav__item">
-              <Link smooth to='/#footer' className="nav__link" scroll={scrollWithOffset}>
+              <Link
+                smooth to='/#footer'
+                className="nav__link"
+                scroll={scrollWithOffset}
+              >
                 <i className='nav__icon'><RiContactsLine size={20} color='white' /></i><span>Contacts</span>
               </Link>
             </li>

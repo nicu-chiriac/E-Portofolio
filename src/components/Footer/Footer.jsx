@@ -11,13 +11,10 @@ const Footer = () => {
           <div className="box">
             <div className="box__row_1">
               <BsWhatsapp className='footer__icon' />
-              <h2>WhatsApp</h2>
+              <h2>Phone Number</h2>
             </div>
             <div className="box__row_2">
               <h4>0768 029 807</h4>
-              <div onClick={() => window.open('mailto:nicu.chiriac99@yahoo.com', '_blank')}>
-                <button>Contact me</button>
-              </div>
             </div>
           </div>
           <div className="box">

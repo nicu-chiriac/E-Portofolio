@@ -5,7 +5,6 @@ import github from '../../assets/github.svg';
 import email from '../../assets/mail.svg';
 
 
-
 const SideSocialLinks = () => {
   return (
     <div className="sticky-left-container">
