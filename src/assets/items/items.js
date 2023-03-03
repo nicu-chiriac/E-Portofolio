@@ -14,6 +14,7 @@ import item13 from './adobexd.png';
 import item14 from './postman.png';
 import item15 from './office.png';
 import item16 from './giticon.png';
+import item17 from './vscode.png';
 
 
 const items = [
@@ -131,6 +132,13 @@ const items = [
     id: '16',
     name : "Git",
     image: item16,
+    category: 'tools',
+  },
+
+  {
+    id: '17',
+    name : "VS Code",
+    image: item17,
     category: 'tools',
   },
 
