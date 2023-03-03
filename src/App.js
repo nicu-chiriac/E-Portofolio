@@ -16,7 +16,7 @@ function App() {
       <Router>
         <Navbar />
           <Routes>
-            <Route exact path='/E-Portofolio/' 
+            <Route exact path='/E-Portofolio' 
               element = {
                 <>
                   <Hero />
