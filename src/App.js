@@ -16,7 +16,7 @@ function App() {
       <Router>
         <Navbar />
           <Routes>
-            <Route exact path='/' 
+            <Route exact path='/E-Portofolio/' 
               element = {
                 <>
                   <Hero />
@@ -28,8 +28,8 @@ function App() {
                 </>
               } 
             />
-            <Route path='/project1' element={<Project1 />} />
-            <Route path='/project5' element={<Project5 />} />
+            <Route path='/E-Portofolio/project1' element={<Project1 />} />
+            <Route path='/E-Portofolio/project5' element={<Project5 />} />
           </Routes>
       </Router>
     </>

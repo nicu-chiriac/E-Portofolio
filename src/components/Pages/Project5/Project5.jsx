@@ -136,7 +136,7 @@ const Project5 = () => {
             className='project__image'
           />
         </div>
-        <Link smooth to='/#projects' scroll={scrollWithOffset}>
+        <Link smooth to='/E-Portofolio/#projects' scroll={scrollWithOffset}>
           <button className='project1__button'>
             <MdOutlineArrowBack size={30} />
           </button>

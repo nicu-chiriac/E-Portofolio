@@ -36,7 +36,7 @@ const Projects = () => {
                 status etc. It has different types of permissions for Admin, professors (super-user),
                 students (users).
               </p>
-              <NavLink to='/project1'>
+              <NavLink to='/E-Portofolio/project1'>
                 <button className='button'>SEE MORE</button>
               </NavLink>
               <div className="links">
@@ -113,7 +113,7 @@ const Projects = () => {
               <h2>RestaurantApp</h2>
               <p> The previous Restaurant Website, but this time with an added Backend using Python's framework - Flask. The website turns into an frontend - backend app. Now the products are automatically added from a database. The app has an Auth system made with JWT (JSON Web Token) with 3 different roles and permissions who can perform CRUD operations on the products. It also has a Swagger documentation available.
               </p>
-              <NavLink to='/project5'>
+              <NavLink to='/E-Portofolio/project5'>
                 <button className='button'>SEE MORE</button>
               </NavLink>
               <div className="links">
@@ -151,7 +151,7 @@ const Projects = () => {
               <h2>E-Portofolio</h2>
               <p>My personal digital portofolio made as a more interactive way to present and keep track of my work. The work on this project focused on responsive web design, using :root CSS variables, layouts and reusable classes.
               </p>
-              <a href='#unavailable'>
+              <a href='/E-Portofolio/#unavailable'>
                 <button className='button disabled'>YOU ARE HERE 😊</button>
               </a>
               <div className="links">

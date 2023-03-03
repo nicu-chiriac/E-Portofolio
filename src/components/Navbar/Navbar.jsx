@@ -38,7 +38,7 @@ const Navbar = () => {
     <header className='header'>
       <nav className='nav container'>
         <Link
-          smooth to='/#home'
+          smooth to='/E-Portofolio/#home'
           className="nav__logo"
           scroll={scrollWithOffset}
         >
@@ -49,7 +49,7 @@ const Navbar = () => {
             <li className="nav__item">
 
               <Link
-                smooth to='/#home'
+                smooth to='/E-Portofolio/#home'
                 className="nav__link active-link"
                 scroll={scrollWithOffset}
               >
@@ -60,7 +60,7 @@ const Navbar = () => {
 
             <li className="nav__item">
               <Link
-                smooth to='/#about'
+                smooth to='/E-Portofolio/#about'
                 className="nav__link"
                 scroll={scrollWithOffset}
               >
@@ -70,7 +70,7 @@ const Navbar = () => {
 
             <li className="nav__item">
               <Link
-                smooth to='/#education'
+                smooth to='/E-Portofolio/#education'
                 className="nav__link"
                 scroll={scrollWithOffset}
               >
@@ -80,7 +80,7 @@ const Navbar = () => {
 
             <li className="nav__item">
               <Link
-                smooth to='/#skills'
+                smooth to='/E-Portofolio/#skills'
                 className="nav__link"
                 scroll={scrollWithOffset}
               >
@@ -90,7 +90,7 @@ const Navbar = () => {
 
             <li className="nav__item">
               <Link
-                smooth to='/#projects'
+                smooth to='/E-Portofolio/#projects'
                 className="nav__link"
                 scroll={scrollWithOffset}
               >
@@ -100,7 +100,7 @@ const Navbar = () => {
 
             <li className="nav__item">
               <Link
-                smooth to='/#footer'
+                smooth to='/E-Portofolio/#footer'
                 className="nav__link"
                 scroll={scrollWithOffset}
               >
