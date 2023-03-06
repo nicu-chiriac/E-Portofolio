@@ -12,15 +12,11 @@ import logo from './../../assets/logo.svg';
 import { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { useEffect } from 'react';
+import scrollWithOffset from '../utilityComponents/scroll';
 
 const Navbar = () => {
 
   const [showMenu, setShowMenu] = useState(false);
-  const scrollWithOffset = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
-    const yOffset = -100;
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
-  }
 
   useEffect(() => {
     const hash = window.location.hash;
