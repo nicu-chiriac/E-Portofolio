@@ -89,15 +89,13 @@
   transform: scale(1.1);
 }
 
-
 .projects .column__2 .links {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 1rem;
   align-items: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 2rem;
 }
 
 .projects .column__2 .links .item img{
@@ -135,7 +133,7 @@
     grid-template-columns:repeat(auto-fill , 40px);
     margin-left: 1rem;
     margin-right: 1rem;
-    gap:1rem;
+    /* gap:1rem; */
   }
 
   .projects .column__2 .links h3 {

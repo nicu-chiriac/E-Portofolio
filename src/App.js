@@ -4,7 +4,7 @@ import Hero from './components/Hero/Hero';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import Education from './components/Education/Education';
-import Projects from './components/Projects/Projects';
+import ProjectList from './components/Projects/ProjectList';
 import Skills from './components/Skills/Skills';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Project1 from './components/Pages/Project1/Project1';
@@ -23,7 +23,7 @@ function App() {
                   <About />
                   <Education />
                   <Skills />
-                  <Projects />
+                  <ProjectList />
                   <Footer />
                 </>
               } 
